@@ -1,0 +1,668 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "SQLite",
+    "databaseName": "recipes",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "ingredients",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f49fb69b-90c5-f66a-f571-c72906947b90"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6700fbfc-6159-1daf-3d6b-cee1bf2f082b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 16.399995622634805,
+          "top": 180.40000191688546,
+          "zIndex": 378,
+          "widthName": 66,
+          "widthComment": 60
+        },
+        "id": "dfc75e86-d107-c4af-9af1-693ef7d785d9"
+      },
+      {
+        "name": "recipes",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0f22db73-a470-3340-c5d6-7394cf1fd45e"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "69545b84-a59f-807a-d27a-f957ba547e61"
+          },
+          {
+            "name": "description",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0513ebac-4763-4b47-3c1e-00be2f5cef9e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 16.39999569892874,
+          "top": 45.99999876976012,
+          "zIndex": 379,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "bbca4055-6903-c538-2817-a5528885386e"
+      },
+      {
+        "name": "steps",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "556b2b73-6dd7-72e1-a57b-f6c490dc71e4"
+          },
+          {
+            "name": "step",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6d2d98bc-a509-82ac-8bd1-ad1f35ca1a3d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 16.39999569892865,
+          "top": 298.00000477790843,
+          "zIndex": 376,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "6e933949-2728-0e04-047c-30f74c7283cf"
+      },
+      {
+        "name": "recipes-ingredients",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "42c1025e-1ec4-9a7a-beea-64018cab861b"
+          },
+          {
+            "name": "receipe_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4d5b961f-8880-c377-4f6a-17069e1f4347"
+          },
+          {
+            "name": "ingredient_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 76,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "90a3a9a9-c5d8-9594-50ef-e681d4f76448"
+          },
+          {
+            "name": "quantity",
+            "comment": "",
+            "dataType": "REAL",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "63cb7d95-84d8-7d16-ce19-a9d18301e2d1"
+          },
+          {
+            "name": "unit_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6a6fc3df-92f7-7ffb-0cce-6676eb46b78c"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 495.2000071144101,
+          "top": 209.20000266075124,
+          "zIndex": 382,
+          "widthName": 112,
+          "widthComment": 60
+        },
+        "id": "1c41629d-8c10-71be-387e-fa4ec73b552c"
+      },
+      {
+        "name": "recipes-steps",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "42b5e692-5740-bec5-640d-e4c8cf2b7098"
+          },
+          {
+            "name": "step_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b5f78c03-bfd2-6dbf-5dcf-8c2a67a766c5"
+          },
+          {
+            "name": "recipe_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1ca16441-dbe7-24e1-68ff-b668458b0de6"
+          },
+          {
+            "name": "step_number",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 78,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b11dcca1-cabe-b1ed-c328-6eb013a82e8a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 492.80000705718965,
+          "top": 48.3999988269805,
+          "zIndex": 380,
+          "widthName": 79,
+          "widthComment": 60
+        },
+        "id": "688b8417-9ca6-bdea-749d-9d29845b30a7"
+      },
+      {
+        "name": "units",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7058cbe4-7a74-c615-a10a-8eb0eedcc7e8"
+          },
+          {
+            "name": "unit",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c2f960b5-4b7d-7d08-c16f-537c62bc3690"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 17.599995651244978,
+          "top": 413.2000074672694,
+          "zIndex": 377,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "9bdf7e08-f8b1-1f99-5707-0be2de683178"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "start": {
+          "tableId": "bbca4055-6903-c538-2817-a5528885386e",
+          "columnIds": [
+            "0f22db73-a470-3340-c5d6-7394cf1fd45e"
+          ],
+          "x": 367.39999569892876,
+          "y": 78.62499876976011,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "1c41629d-8c10-71be-387e-fa4ec73b552c",
+          "columnIds": [
+            "4d5b961f-8880-c377-4f6a-17069e1f4347"
+          ],
+          "x": 495.2000071144101,
+          "y": 352.1166693274179,
+          "direction": "left"
+        },
+        "id": "53a36de4-961f-617f-c045-dff80a3310c8",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "dfc75e86-d107-c4af-9af1-693ef7d785d9",
+          "columnIds": [
+            "f49fb69b-90c5-f66a-f571-c72906947b90"
+          ],
+          "x": 363.39999562263483,
+          "y": 235.40000191688546,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "1c41629d-8c10-71be-387e-fa4ec73b552c",
+          "columnIds": [
+            "90a3a9a9-c5d8-9594-50ef-e681d4f76448"
+          ],
+          "x": 495.2000071144101,
+          "y": 237.78333599408455,
+          "direction": "left"
+        },
+        "id": "c0db3271-146d-f23e-15ac-a41fb458d225",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "6e933949-2728-0e04-047c-30f74c7283cf",
+          "columnIds": [
+            "556b2b73-6dd7-72e1-a57b-f6c490dc71e4"
+          ],
+          "x": 363.39999569892865,
+          "y": 353.00000477790843,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "688b8417-9ca6-bdea-749d-9d29845b30a7",
+          "columnIds": [
+            "b5f78c03-bfd2-6dbf-5dcf-8c2a67a766c5"
+          ],
+          "x": 492.80000705718965,
+          "y": 86.1499988269805,
+          "direction": "left"
+        },
+        "id": "cfd3dd8e-d36c-f64d-f79d-304b3a3db325",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "bbca4055-6903-c538-2817-a5528885386e",
+          "columnIds": [
+            "0f22db73-a470-3340-c5d6-7394cf1fd45e"
+          ],
+          "x": 367.39999569892876,
+          "y": 143.8749987697601,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "688b8417-9ca6-bdea-749d-9d29845b30a7",
+          "columnIds": [
+            "1ca16441-dbe7-24e1-68ff-b668458b0de6"
+          ],
+          "x": 492.80000705718965,
+          "y": 161.6499988269805,
+          "direction": "left"
+        },
+        "id": "2e22bd79-b426-cfeb-7120-5f59f8509367",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "9bdf7e08-f8b1-1f99-5707-0be2de683178",
+          "columnIds": [
+            "7058cbe4-7a74-c615-a10a-8eb0eedcc7e8"
+          ],
+          "x": 364.59999565124497,
+          "y": 468.2000074672694,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "1c41629d-8c10-71be-387e-fa4ec73b552c",
+          "columnIds": [
+            "6a6fc3df-92f7-7ffb-0cce-6676eb46b78c"
+          ],
+          "x": 495.2000071144101,
+          "y": 294.95000266075124,
+          "direction": "left"
+        },
+        "id": "ae88ea3c-5206-1445-be32-54d24cbc0bb8",
+        "relationshipType": "OneN"
+      }
+    ]
+  }
+}
