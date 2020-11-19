@@ -17,7 +17,7 @@
     },
     "database": "SQLite",
     "databaseName": "recipes",
-    "canvasType": "ERD",
+    "canvasType": "SQL",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
