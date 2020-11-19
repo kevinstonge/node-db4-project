@@ -14,10 +14,16 @@ const findById = async (id) => {
         const ingredients = await db('recipes')
             .join('recipes-ingredients', 'recipes-ingredients.recipe_id', 'recipes.id')
             .join('ingredients', 'recipes-ingredients.ingredient_id', 'ingredients.id')
-            .join('units','units.id','recipes-ingredients.unit_id')
+            .join('units', 'units.id', 'recipes-ingredients.unit_id')
             .where('recipe_id', id)
-            .select('ingredients.name', 'recipes-ingredients.quantity', 'units.unit')
-        return { ...recipe, ingredients }
+            .select('ingredients.name', 'recipes-ingredients.quantity', 'units.unit');
+        const steps = await db('recipes')
+            .join('recipes-steps', 'recipes-steps.recipe_id', 'recipes.id')
+            .join('steps', 'steps.id', 'recipes-steps.step_id')
+            .where('recipe_id', id)
+            .orderBy('recipes-steps.step_number')
+            .select('recipes-steps.step_number', 'steps.step');
+        return { ...recipe, ingredients, steps }
     } catch (e) { throw e; }
 }
 
